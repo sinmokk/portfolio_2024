@@ -1,0 +1,279 @@
+@font-face {
+    font-family: 'Cafe24ClassicType-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2210-2@1.0/Cafe24ClassicType-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+:root{
+    --spacing-sm : 6px;
+    --spacing-s: 16px;
+    --spacing-30: 30px
+    --spacing-60: 60px;
+    --spacing-120:120px;
+    --spacing-145: 145px;
+    --spacing-160: 160px;
+    --spacing-180: 180px;
+    --black: #232527;
+
+    --h2-font-size: 80px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 800vh;
+    /* background: rgb(237, 236, 255); */
+    /* background: linear-gradient(60deg, rgb(221, 228, 255) 0%, rgb(255, 141, 165) 35%), rgb(255, 30, 255) 100%; */
+    background: linear-gradient( #fdfeff 0%, rgb(255, 194, 207) 100%), rgb(255, 55, 162)100%;
+    color: var(--black);
+    font-family: 'Pretendard-Regular';
+}
+.noise_img {
+    z-index: -1;
+    background-image: url(Random\ static.png);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 500vh;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style: none;
+}
+
+.section-container {
+    border: 1px solid red;
+    max-width:  1640px;
+    min-width:  1640px;
+    margin: 0 auto;
+}
+h2 {
+    font-size: 80px;
+    padding-top: 60px;
+}
+header {
+    
+}
+header ul {
+    height: 80px;
+    justify-content: flex-end;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+section.hero {
+
+}
+section.hero .about {
+    font-family: 'Cafe24ClassicType-Regular';
+    font-size: 20px;
+    margin-bottom: 16px;
+}
+section.hero .name {
+    font-weight: bold;
+}
+section.hero .text-container {
+    margin-top: var(--spacing-120);
+}
+section.hero .flex {
+    display: flex;
+    justify-content: center;
+}
+section.hero h1 {
+    font-family:'Cafe24ClassicType-Regular' ;
+    text-align: center;
+    font-size: 160px;
+}
+section.hero .flex h1 {
+    font-family: 'Pretendard-Regular';
+    font-weight: 900;
+    font-size: 140px;
+    line-height: 1;
+}
+section.hero .flex .year {
+    font-size: 40px;
+    display: flex;
+    align-items: first baseline;
+}
+section.hero .hero-bottom {
+    padding: var(--spacing-180)  0 30px 0;
+}
+
+
+/* ### section.skills */
+section.skills {
+}
+section.skills h2 {
+    font-size: var(--h2-font-size);
+}
+section.skills .skills-items {
+    padding: 60px 0 var(--spacing-120) 0;
+    /* display: flex;
+    flex-wrap: wrap;
+    gap: 30px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section.skills .skills_item {
+    font-size: 50px;
+    border: 3px solid #232527;
+    width: 435px;
+    /* padding: 0px 40px; */
+    height: 100px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+}
+section.skills .skills_item:nth-child(1){ }
+section.skills .skills_item:nth-child(2){rotate: -3deg; background-color: #fff;}
+/* section.skills .skills_item:nth-child(3){rotate: -7deg; } */
+section.skills .skills_item:nth-child(4){rotate: 10deg; background-color: #fff;}
+section.skills .skills_item:nth-child(5){ } /*photoshop*/
+section.skills .skills_item:nth-child(6){background-color: #fff; }
+section.skills .skills_item:nth-child(7){ }
+section.skills .skills_item.bg-black {
+    background-color: var(--black);
+    color: #fff;
+    box-sizing: inherit;
+    padding: 0px 340px;
+}
+
+
+
+/* ### section.portfolio */
+section.portfolio {
+
+}
+section.portfolio h2 {
+    /* margin-bottom: var(--spacing-30); */
+    margin-bottom: 30px;
+}
+section.portfolio .portfolio-items {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 120px;
+    justify-content: space-between;
+}
+
+section.portfolio .portfolio-item {
+    margin-bottom: 20px;
+    border: 3px dotted pink;
+    width: 529px;
+    height: 269px;
+    transition: 1s ;
+}
+section.portfolio .portfolio-item:hover {
+    rotate: 3deg;
+    opacity: 0.7;
+    filter: brightness(0.2);
+}
+section.portfolio .portfolio-item a{
+    width: 100%;
+    display: block;
+    height: 100%;
+}
+
+section.portfolio .portfolio-item:nth-child(1){
+    background-image: url(./imgs/thumb1.png) ;
+    background-position: center;
+    background-size: cover;
+}
+section.portfolio .portfolio-item:nth-child(2){
+    background-image: url(./imgs/thumb2.png) ;
+    background-position: center;
+    background-size: cover;
+}
+section.portfolio .portfolio-item:nth-child(3){
+    background-image: url(./imgs/thumb3.png) ;
+    background-position: center;
+    background-size: cover;
+}
+section.portfolio .portfolio-item:nth-child(4){
+    background-image: url(./imgs/thumb4.png) ;
+    background-position: center;
+    background-size: cover;
+}
+/* ###certification */
+section.certification {
+
+}
+section.certification h3{
+    font-size: 80px;
+    padding: 120px 20px;
+}
+
+section.certification .items {
+    display: flex;
+    margin-top: var(--spacing-120);
+}
+section.certification .items .item {
+    display: flex;
+    flex: 1;
+    height: 600px;
+}
+section.certification .certification-list {
+    padding: 120px 0 0 60px
+}
+section.certification .certification-list li {
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+section.certification .items .item:nth-child(1) {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+ }
+section.certification .items .item:nth-child(2) {
+    color: #fff;
+   background-color: #232527;
+}
+
+/* ###section.poster */
+section.poster {
+    /* padding-top: 120px; */
+}
+section.poster h2 {
+    padding-top:var(--spacing-145);
+    margin-bottom: 60px;
+}
+section.poster .items {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 120px;
+}
+section.poster .item {
+    background-color: #fff;
+    width: 391px;
+    height: 500px;
+    border-radius: 50px;
+    overflow: hidden;
+}
+section.poster .item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+section.lastPage {
+    height: 80vh;
+}
